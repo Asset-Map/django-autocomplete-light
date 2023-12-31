@@ -15,11 +15,11 @@ from .views import AutocompleteView, RegistryView
 
 
 urlpatterns = urls([
-    url(r'^(?P<autocomplete>[-\w]+)/$',
+    url(r'(?P<autocomplete>[-\w]+)/',
         AutocompleteView.as_view(),
         name='autocomplete_light_autocomplete'
     ),
-    url(r'^$',
+    url(r'',
         RegistryView.as_view(),
         name='autocomplete_light_registry'
     ),
